@@ -12,7 +12,36 @@ use Nece\Brawl\ResultAbstract;
  */
 class SendResult extends ResultAbstract
 {
-    public $result = array();
+    private $request_id;
+    private $result = array();
+
+    /**
+     * 设置请求ID
+     *
+     * @Author nece001@163.com
+     * @DateTime 2023-06-17
+     *
+     * @param string $value
+     *
+     * @return void
+     */
+    public function setRequestId($value)
+    {
+        $this->request_id = $value;
+    }
+
+    /**
+     * 获取请求ID
+     *
+     * @Author nece001@163.com
+     * @DateTime 2023-06-17
+     *
+     * @return string
+     */
+    public function getRequestId()
+    {
+        return $this->request_id;
+    }
 
     /**
      * 添加结果

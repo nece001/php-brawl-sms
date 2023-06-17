@@ -12,7 +12,6 @@ use Nece\Brawl\ClientAbstract;
  */
 abstract class SenderAbstract extends ClientAbstract
 {
-
     protected $phone_numbers = array();
 
     /**
