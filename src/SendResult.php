@@ -86,4 +86,17 @@ class SendResult extends ResultAbstract
     {
         return $this->result;
     }
+
+    /**
+     * 转数组
+     *
+     * @Author nece001@163.com
+     * @DateTime 2023-06-24
+     *
+     * @return array
+     */
+    public function toArray()
+    {
+        return $this->result;
+    }
 }
